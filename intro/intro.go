@@ -38,5 +38,5 @@ func Intro() {
 	db.Model(&product).Updates(map[string]interface{}{"Price": 420, "Code": "D69"})
 
 	// delete
-	//db.Delete(&product, 1)
+	db.Delete(&product, 1)
 }
